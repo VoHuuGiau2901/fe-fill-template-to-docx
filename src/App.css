@@ -36,7 +36,7 @@ body {
     /* align-items: center; */
     gap: 20px;
     flex-wrap: wrap;
-    padding-top: 100px;
+    padding-top: 10%;
 }
 
 .container>.serviceBox {
