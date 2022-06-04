@@ -43,7 +43,7 @@ function App() {
             <p>Linh động, mạnh mẽ</p>
           </div>
         </div>
-        <div className='serviceBox'  onClick={e => handleClick("WC")}>
+        <div className='serviceBox'  onClick={e => handleClick("WC – WD - WI")}>
           <div className='icon ic3'>
             <img src={FingerPrint_img} className="img" alt="#" />WC – WD - WI
           </div>
@@ -52,7 +52,7 @@ function App() {
             <p>Đa mục tiêu, nhìn nhận vấn đề đa chiều</p>
           </div>
         </div>
-        <div className='serviceBox'  onClick={e => handleClick("WP")}>
+        <div className='serviceBox'  onClick={e => handleClick("WP - WL")}>
           <div className='icon ic4'>
             <img src={FingerPrint_img} className="img" alt="#" />WP - WL
           </div>
@@ -61,7 +61,7 @@ function App() {
             <p>Chủ nghĩa hoàn hảo</p>
           </div>
         </div>
-        <div className='serviceBox'  onClick={e => handleClick("WT")}>
+        <div className='serviceBox'  onClick={e => handleClick("WT - WS")}>
           <div className='icon ic5'>
             <img src={FingerPrint_img} className="img" alt="#" />WT - WS
           </div>

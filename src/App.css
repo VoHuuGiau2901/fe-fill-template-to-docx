@@ -20,7 +20,7 @@ body {
 
 .wrapper_img{
     margin: 0;
-    margin-left: 100px;
+    margin-left: 5vw;
 }
 
 .img_left{
@@ -34,7 +34,7 @@ body {
     display: flex;
     justify-content: center;
     /* align-items: center; */
-    gap: 20px;
+    gap: 1vw;
     flex-wrap: wrap;
     padding-top: 10%;
 }
@@ -42,7 +42,7 @@ body {
 .container>.serviceBox {
     position: relative;
     width: 25%;
-    height: 180px;
+    height: 20vh;
     background: #272430;
     border-radius: 15px;
     overflow: hidden;
@@ -53,8 +53,8 @@ body {
 }
 
 .container>.serviceBox>.icon>.img {
-    width: 70px;
-    height: 70px;
+    width: 23%;
+    height: 35%;
 }
 
 .container>.serviceBox>.icon {
@@ -71,14 +71,14 @@ body {
 }
 
 .container>.serviceBox:hover>.icon>.img {
-    width: 0px;
-    height: 0px;
+    width: 0%;
+    height: 0%;
 }
 
 .container>.serviceBox:hover>.icon {
-    left: calc(50% - 80px);
-    width: 160px;
-    height: 70px;
+    width: 50%;
+    height: 35%;
+    left: 25%;
     border-bottom-right-radius: 50%;
     border-bottom-left-radius: 50%;
     color: rgb(71, 71, 71);
@@ -103,3 +103,7 @@ body {
 .container>.serviceBox>.content>p {
     line-height: 1.5em;
 }
+
+@media only screen and (max-width: 1024px) {
+
+  }
