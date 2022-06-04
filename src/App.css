@@ -7,6 +7,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.top_banner_responsive{
+    visibility: hidden;
+}
+
 .left {
     position: fixed;
     left: 0;
@@ -36,7 +40,7 @@ body {
     /* align-items: center; */
     gap: 1vw;
     flex-wrap: wrap;
-    padding-top: 10%;
+    /* padding-top: 10%; */
 }
 
 .container>.serviceBox {
@@ -88,9 +92,9 @@ body {
 
 .container>.serviceBox>.content {
     position: relative;
-    padding: 20px;
+    padding: 10%;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 15%;
     color: antiquewhite;
     z-index: 1;
 }
@@ -105,5 +109,35 @@ body {
 }
 
 @media only screen and (max-width: 1024px) {
-
+    .body{
+        min-height: 100vh;
+    }
+    .left{
+        width: 0vw;
+    }
+    .container{
+        width: 100vw;
+    }
+    .img_left{
+        visibility: hidden;
+    }
+    .top_banner_responsive{    width: 100%;
+        visibility: visible;
+    }
+    .container>.serviceBox {
+        position: relative;
+        width: 55%;
+        height: 30vw;
+        background: #272430;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    .container>.serviceBox>.content>h2 {
+        margin-top: 10px;
+        /* margin-bottom: 5px; */
+    }
+    
+    .container>.serviceBox>.content>p {
+        line-height: 1.5em;
+    }
   }

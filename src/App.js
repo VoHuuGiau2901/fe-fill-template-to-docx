@@ -3,7 +3,8 @@ import './Color.css';
 import React from 'react';
 import FingerPrint_img from './image/FG.png';
 import Logo_img from './image/LOGO-TRUNG-TAM-NEW.png';
-import {getServerLink} from './Link';
+import TopBanner from './image/top_banner.png'
+import { getServerLink } from './Link';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
 
   return (
     <div>
+      <img src={TopBanner} className="top_banner_responsive" alt='#'/>
       <div className='container left'>
         <a href='https://mentoring.edu.vn/?fbclid=IwAR3BENiyRYrI-BTRutMfAOYdXLdWiJZCzExgXOmgFwJkmV2x5jds1rhJRWI' alt="#" target="_blank" rel="noreferrer">
           <figure className='wrapper_img'>
@@ -25,7 +27,7 @@ function App() {
         </a>
       </div>
       <div className='container right'>
-        <div className='serviceBox'  onClick={e => handleClick("UL")}>
+        <div className='serviceBox' onClick={e => handleClick("UL")}>
           <div className='icon ic1'>
             <img src={FingerPrint_img} className="img" alt="#" />UL
           </div>
@@ -34,7 +36,7 @@ function App() {
             <p>Ôn hòa, thân thiện, cởi mở, lãng mạn</p>
           </div>
         </div>
-        <div className='serviceBox'  onClick={e => handleClick("RL")}>
+        <div className='serviceBox' onClick={e => handleClick("RL")}>
           <div className='icon ic2'>
             <img src={FingerPrint_img} className="img" alt="#" />RL
           </div>
@@ -43,7 +45,7 @@ function App() {
             <p>Linh động, mạnh mẽ</p>
           </div>
         </div>
-        <div className='serviceBox'  onClick={e => handleClick("WC – WD - WI")}>
+        <div className='serviceBox' onClick={e => handleClick("WC – WD - WI")}>
           <div className='icon ic3'>
             <img src={FingerPrint_img} className="img" alt="#" />WC – WD - WI
           </div>
@@ -52,7 +54,7 @@ function App() {
             <p>Đa mục tiêu, nhìn nhận vấn đề đa chiều</p>
           </div>
         </div>
-        <div className='serviceBox'  onClick={e => handleClick("WP - WL")}>
+        <div className='serviceBox' onClick={e => handleClick("WP - WL")}>
           <div className='icon ic4'>
             <img src={FingerPrint_img} className="img" alt="#" />WP - WL
           </div>
@@ -61,7 +63,7 @@ function App() {
             <p>Chủ nghĩa hoàn hảo</p>
           </div>
         </div>
-        <div className='serviceBox'  onClick={e => handleClick("WT - WS")}>
+        <div className='serviceBox' onClick={e => handleClick("WT - WS")}>
           <div className='icon ic5'>
             <img src={FingerPrint_img} className="img" alt="#" />WT - WS
           </div>
@@ -70,7 +72,7 @@ function App() {
             <p>Lập mục tiêu rõ ràng để hành động</p>
           </div>
         </div>
-        <div className='serviceBox'  onClick={e => handleClick("WE")}>
+        <div className='serviceBox' onClick={e => handleClick("WE")}>
           <div className='icon ic6'>
             <img src={FingerPrint_img} className="img" alt="#" />WE
           </div>
@@ -79,7 +81,7 @@ function App() {
             <p>Có tầm nhìn xa</p>
           </div>
         </div>
-        <div className='serviceBox'  onClick={e => handleClick("ARCH")}>
+        <div className='serviceBox' onClick={e => handleClick("ARCH")}>
           <div className='icon ic7'>
             <img src={FingerPrint_img} className="img" alt="#" />ARCH
           </div>
