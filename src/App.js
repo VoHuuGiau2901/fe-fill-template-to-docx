@@ -11,14 +11,14 @@ function App() {
   // const {type,setType}= useState("");
 
   const handleClick = (value) => {
-    let url = getServerLink() + value + "/PDF";
+    let url = getServerLink() + value;
     // console.log(url);
     window.open(url)
   }
 
   return (
     <div>
-      <img src={TopBanner} className="top_banner_responsive" alt='#' />
+      <img src={TopBanner} className="top_banner_responsive" alt='#'/>
       <div className='container left'>
         <a href='https://mentoring.edu.vn/?fbclid=IwAR3BENiyRYrI-BTRutMfAOYdXLdWiJZCzExgXOmgFwJkmV2x5jds1rhJRWI' alt="#" target="_blank" rel="noreferrer">
           <figure className='wrapper_img'>
