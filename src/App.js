@@ -1,8 +1,7 @@
 import './App.css';
 import './Color.css';
 import React from 'react';
-import Sun_img from './image/sun.png';
-import Moon_ing from './image/moon.png';
+import Mode_img from './image/day-and-night.png'
 import FingerPrint_img from './image/FG.png';
 import Logo_img from './image/LOGO-TRUNG-TAM-NEW.png';
 import TopBanner from './image/top_banner.png'
@@ -20,25 +19,30 @@ function App() {
 
   const DarkMode = (e) => {
     if (e.target.checked) {
-      document.getElementById("ic_mode").src = Moon_ing;
       document.body.style.background = 'rgb(' + [56, 43, 56].join(',') + ')';
+      document.getElementById("mode_text").style.color = "white";
+      document.getElementById("mode_text").innerHTML = "DarkMode <br/> ON";
     } else {
-      document.getElementById("ic_mode").src = Sun_img;
       document.body.style.background = 'white';
+      document.getElementById("mode_text").style.color = "Black";
+      document.getElementById("mode_text").innerHTML = "DarkMode <br/> OFF";
     }
   }
 
   return (
     <div>
       <img src={TopBanner} className="top_banner_responsive" alt='#' />
-      <label>
-        <div className='Switch'>
-          <input type={"checkbox"} onChange={e => DarkMode(e)} />
-          <span>
-            <img src={Sun_img} id='ic_mode' alt="#" />
-          </span>
-        </div>
-      </label>
+      <div className='top_nav'>
+        <p id='mode_text'>DarkMode <br/> OFF</p>
+        <label>
+          <div className='Switch'>
+            <input type={"checkbox"} onChange={e => DarkMode(e)} />
+            <span>
+              <img src={Mode_img} id='ic_mode' alt="#" />
+            </span>
+          </div>
+        </label>
+      </div>
       <div className='container left'>
         <a href='https://mentoring.edu.vn/?fbclid=IwAR3BENiyRYrI-BTRutMfAOYdXLdWiJZCzExgXOmgFwJkmV2x5jds1rhJRWI' alt="#" target="_blank" rel="noreferrer">
           <figure className='wrapper_img'>
