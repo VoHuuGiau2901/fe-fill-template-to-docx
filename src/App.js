@@ -17,6 +17,8 @@ function App() {
     // console.log(url);
     window.open(url)
   }
+  
+  document.getElementById("ic_mode").src = Sun_img;
 
   const DarkMode = (e) => {
     if (e.target.checked) {
