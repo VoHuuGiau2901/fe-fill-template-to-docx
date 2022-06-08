@@ -17,8 +17,6 @@ function App() {
     // console.log(url);
     window.open(url)
   }
-  
-  document.getElementById("ic_mode").src = Sun_img;
 
   const DarkMode = (e) => {
     if (e.target.checked) {
@@ -37,7 +35,7 @@ function App() {
         <div className='Switch'>
           <input type={"checkbox"} onChange={e => DarkMode(e)} />
           <span>
-            <img id='ic_mode' alt="#" />
+            <img src={Sun_img} id='ic_mode' alt="#" />
           </span>
         </div>
       </label>
