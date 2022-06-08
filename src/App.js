@@ -33,15 +33,17 @@ function App() {
     <div>
       <img src={TopBanner} className="top_banner_responsive" alt='#' />
       <div className='top_nav'>
-        <p id='mode_text'>DarkMode <br/> OFF</p>
-        <label>
-          <div className='Switch'>
-            <input type={"checkbox"} onChange={e => DarkMode(e)} />
-            <span>
-              <img src={Mode_img} id='ic_mode' alt="#" />
-            </span>
-          </div>
-        </label>
+        <div className='switch_box'>
+          <p id='mode_text'>DarkMode <br /> OFF</p>
+          <label>
+            <div className='switch'>
+              <input type={"checkbox"} onChange={e => DarkMode(e)} />
+              <span>
+                <img src={Mode_img} id='ic_mode' alt="#" />
+              </span>
+            </div>
+          </label>
+        </div>
       </div>
       <div className='container left'>
         <a href='https://mentoring.edu.vn/?fbclid=IwAR3BENiyRYrI-BTRutMfAOYdXLdWiJZCzExgXOmgFwJkmV2x5jds1rhJRWI' alt="#" target="_blank" rel="noreferrer">
